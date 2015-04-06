@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="30dip"
+	android:background="@drawable/background_style"
+	>
+    
+    <!--  View Title Label -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:text="LOGIN"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+    />
+    
+    <!--  Email Label -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#ffffff"
+    />
+    
+    <!--  Email TextField -->
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#66cdcc"
+        android:background="@drawable/edittext_style"
+        android:padding="10dip"
+    />
+    
+    <!--  Password Label -->
+     <TextView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="15dip"
+    	android:text="Password"
+    	android:textColor="#ffffff"
+    />
+    
+    <!--  Password TextField -->
+    <EditText
+       	android:id="@+id/loginPassword"
+       	android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:password="true"
+       	android:textColor="#66cdcc"
+       	android:background="@drawable/edittext_style"
+       	android:padding="10dip"
+    />
+    
+    <!--  Error message -->
+    <TextView
+        android:id="@+id/login_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#e30000"
+        android:padding="10dip"
+        android:textStyle="bold"
+    />
+    
+    <!--  Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:padding="12dip"
+        android:text="LOG IN"
+        android:background="@drawable/button_style"
+        android:textColor="#ffffff"
+    />
+    
+    <!--  Link to Register Screen -->
+    <Button
+        android:id="@+id/btnLinkToRegisterScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:background="@null"
+        android:text="I don&apos;t have account. Register Me!"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+    />
+        
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="30dip"
+    android:background="@drawable/background_style">
+
+    <!--  View Status -->
+    <TextView  
+        android:id="@+id/StatusTextView"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:textSize="25dip"
+        android:textStyle="bold"
+        android:text="@string/start"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="30dip" 
+    />
+    
+    <LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center"
+	>
+    
+    <Button 
+        android:text="Start sending"
+        android:id="@+id/StartRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2_style"
+        android:padding="12dip"
+        android:textColor="#3c79b4"
+        android:layout_marginRight="10dip"
+    />
+    
+    <Button 
+        android:text="Stop sending"
+        android:id="@+id/StopRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/StartRecording" 
+        android:layout_alignTop="@id/StartRecording"
+        android:background="@drawable/button2_style"
+        android:padding="12dip"
+        android:textColor="#3c79b4"
+    />
+    
+    </LinearLayout>
+ 
+    <!--  View progress decibel bar -->
+    <ProgressBar
+       	android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="120"
+        android:layout_marginTop="20dip"
+    />   
+    
+    <TextView
+       	android:id="@+id/AmplitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dip"
+        android:textColor="#ffffff" 
+    />
+    
+    <LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:layout_marginTop="20dip"
+	>
+    
+    <TextView
+       	android:id="@+id/textlongname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude : "
+        android:textSize="15dip" 
+        android:textColor="#ffffff"
+    />
+    
+    <TextView
+       	android:id="@+id/textlong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dip"
+        android:textColor="#ffffff" 
+    />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:layout_marginTop="20dip"
+	>
+        	
+    <TextView
+       	android:id="@+id/textlatname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude : "
+        android:textSize="15dip" 
+        android:textColor="#ffffff"
+    />
+    
+    <TextView
+       	android:id="@+id/textlat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dip"
+        android:textColor="#ffffff" 
+    />
+    
+    </LinearLayout>
+    	
+    <TextView
+		android:id="@+id/date"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=""
+		android:gravity="center"
+		android:textColor="#ffffff"
+		android:layout_marginTop="20dip" 
+     />
+        
+    <!--  Link to logout -->
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout Me"
+        android:textSize="20dip"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:id="@+id/btnLogout"
+        android:layout_marginTop="50dip"
+        android:background="@null"/>
+ 
+</LinearLayout>
